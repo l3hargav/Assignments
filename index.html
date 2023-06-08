@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0"
+        <title>Webpage</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="page">
+            <div id="parent">
+                <div id="drag-box">
+                     <div class="item" id="item1" draggable="true" ondragstart="onDrag(event)">
+                        item1
+                     </div>
+                     <div class="item" id="item2" draggable="true" ondragstart="onDrag(event)">
+                        item2
+                     </div>
+                     <div class="item" id="item3" draggable="true" ondragstart="onDrag(event)">
+                        item3
+                     </div>
+                     <div class="item" id="item4" draggable="true" ondragstart="onDrag(event)">
+                        item4
+                     </div>
+                </div>
+                <div id="drop-box" ondragover="dragEnd(event)" ondrop="onDrop(event)">
+                </div>
+            </div>
+            <button onclick="resetPage()">Reset</button>
+       </div> 
+    </body>
+</html>
