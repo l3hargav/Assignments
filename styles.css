@@ -1,0 +1,38 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+#parent {
+    height: 300px;
+    width: 1000px;
+    border: 2px solid black;
+    padding: 2px;
+    display: flex;
+}
+#drag-box {
+    height: 289px;
+    width: 50%;
+    border: 2px solid teal;
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#drop-box {
+    height: 289px;
+    width: 50%;
+    border: 2px solid gold;
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.item {
+    background-color:beige;
+    height: 100px;
+    width: 150px;
+    margin: 10px;
+    padding: 10px;
+}
